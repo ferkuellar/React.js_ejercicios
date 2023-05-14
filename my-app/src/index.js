@@ -59,15 +59,21 @@ const Book = () => {
 }
 
 const Image = () => (
-    <img src="https://m.media-amazon.com/images/I/51ZLFV0ZBwL._SX375_BO1,204,203,200_.jpg" alt="legend of zelda"/>
+    <img src='./images/book.jpg' alt='zelda'/>
+
 );
 
 const Title = () => 
-    <h2>The Legend of Zelda™: Tears of the Kingdom – The Complete Official Guide: Collector's Edition Hardcover – June 16, 2023 </h2>;
+    <h2>The Legend of Zelda™</h2>;
 
-const Author = () => {
-    return <h4> Piggyback</h4>;
-};
+    const Author = () => {
+        const inlineHeadingStyles = {
+            color: '#617d98',
+            fontSize: '0.75rem',
+            marginTop: '0.5rem',
+        };
+        return <h4 style={inlineHeadingStyles}> Jordan Moore </h4>;
+    };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
